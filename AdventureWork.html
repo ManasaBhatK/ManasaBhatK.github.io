@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Works Dashboard</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+        }
+
+        .container{
+            width:90%;
+            margin:40px auto;
+        }
+
+        h1{
+            text-align:center;
+            color:#1f3b89;
+            margin-bottom:15px;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#666;
+            margin-bottom:40px;
+            font-size:18px;
+        }
+
+        .dashboard-gallery{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:25px;
+        }
+
+        .card{
+            background:#fff;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.12);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-6px);
+        }
+
+        .card img{
+            width:100%;
+            height:240px;
+            object-fit:cover;
+            display:block;
+        }
+
+        .card-content{
+            padding:18px;
+        }
+
+        .card h3{
+            color:#1f3b89;
+            margin-bottom:12px;
+        }
+
+        .card p{
+            color:#555;
+            line-height:1.6;
+            font-size:15px;
+        }
+
+        .back-section{
+            text-align:center;
+            margin-top:45px;
+        }
+
+        .back-btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:#1f3b89;
+            color:#fff;
+            text-decoration:none;
+            border-radius:6px;
+            font-size:16px;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .back-btn:hover{
+            background:#17306d;
+        }
+
+        @media(max-width:992px){
+
+            .dashboard-gallery{
+                grid-template-columns:1fr;
+            }
+
+            .container{
+                width:95%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Adventure Works Dashboard</h1>
+
+    <p class="subtitle">
+        Interactive Power BI dashboard delivering customer insights, revenue analysis, and order trends for Adventure Works.
+    </p>
+
+    <div class="dashboard-gallery">
+
+        <div class="card">
+
+            <img src="assets/project2/EXEC DASH.png" alt="KPI">
+
+            <div class="card-content">
+
+                <h3>Customer Overview</h3>
+
+                <p>
+                    Highlights key KPIs such as Total Customers and Revenue per Customer,
+                    providing a quick snapshot of business performance and customer value.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/project2/Product Detail" alt="Product Details">
+
+            <div class="card-content">
+
+                <h3>Top Customers Analysis</h3>
+
+                <p>
+                    Displays the Top 100 customers by orders and revenue, helping identify
+                    high-value customers and track their contribution to overall sales.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/project2/Customer Detail.png" alt="Customer Segmentation">
+
+            <div class="card-content">
+
+                <h3>Customer Segmentation</h3>
+
+                <p>
+                    Breaks down customer orders by income level and occupation, enabling
+                    deeper understanding of customer behavior and market segments.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="back-section">
+
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
