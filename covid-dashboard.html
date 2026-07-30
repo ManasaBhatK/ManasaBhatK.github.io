@@ -1,97 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVID-19 Analysis Dashboard | Manasa K</title>
+    <title>COVID-19 Analysis Dashboard</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
-        body {
-            background: #f4f6f9;
-            color: #333;
+        body{
+            background:#f4f6f9;
         }
 
-        .container {
-            width: 85%;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,.12);
+        .container{
+            width:90%;
+            margin:40px auto;
         }
 
-        h1 {
-            color: #1d3b8b;
-            margin-bottom: 10px;
+        h1{
+            text-align:center;
+            color:#1f3b89;
+            margin-bottom:40px;
         }
 
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
+        .dashboard-gallery{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:25px;
         }
 
-        h2 {
-            color: #1d3b8b;
-            margin-top: 35px;
-            margin-bottom: 15px;
+        .card{
+            background:#fff;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.12);
+            transition:.3s;
         }
 
-        p {
-            line-height: 1.8;
+        .card:hover{
+            transform:translateY(-6px);
         }
 
-        ul {
-            margin-left: 20px;
-            line-height: 2;
+        .card img{
+            width:100%;
+            height:240px;
+            object-fit:cover;
+            display:block;
         }
 
-        .tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
+        .card-content{
+            padding:18px;
         }
 
-        .tech span {
-            background: #1d3b8b;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
+        .card h3{
+            color:#1f3b89;
+            margin-bottom:10px;
         }
 
-        .dashboard {
-            margin-top: 25px;
+        .card p{
+            color:#555;
+            line-height:1.6;
+            font-size:15px;
         }
 
-        .dashboard img {
-            width: 100%;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            margin-bottom: 25px;
-        }
+        @media(max-width:992px){
 
-        .btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 25px;
-            background: #1d3b8b;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: .3s;
-        }
+            .dashboard-gallery{
+                grid-template-columns:1fr;
+            }
 
-        .btn:hover {
-            background: #0f2d73;
         }
 
     </style>
@@ -104,71 +87,62 @@
 
 <h1>COVID-19 Analysis Dashboard</h1>
 
-<p class="subtitle">
-Interactive Power BI dashboard providing executive insights into global COVID-19 trends through KPI monitoring, country-wise analysis, and daily trend visualization.
-</p>
+<div class="dashboard-gallery">
 
-<h2>Project Overview</h2>
+    <div class="card">
 
-<p>
-Designed and developed an interactive Power BI dashboard to analyze global COVID-19 data. The dashboard enables users to monitor pandemic trends, compare country-level performance, and track key health metrics through intuitive visualizations and executive-level reporting.
-</p>
+        <img src="assets/images/covid_exec_summary.png" alt="Executive Summary">
 
-<h2>Dashboard Highlights</h2>
+        <div class="card-content">
 
-<ul>
-    <li>Executive summary of Confirmed, Recovered, Active, and Death cases.</li>
+            <h3>Executive Summary</h3>
 
-    <li>Country-wise analysis using Top 5 and Top 10 visualizations.</li>
+            <p>
+                Presents key KPIs including confirmed cases, recoveries, deaths,
+                active cases, recovery rate, and death rate with Top 10 country analysis.
+            </p>
 
-    <li>Interactive world map displaying active COVID-19 cases.</li>
+        </div>
 
-    <li>Daily and monthly trend analysis for confirmed cases and deaths.</li>
+    </div>
 
-    <li>Recovery Rate and Death Rate KPI monitoring.</li>
+    <div class="card">
 
-    <li>Weekly comparison of confirmed cases with percentage change.</li>
+        <img src="assets/images/covid_daily_trends.png" alt="Daily Trends">
 
-    <li>Interactive slicers, drill-downs, and page navigation for enhanced user experience.</li>
+        <div class="card-content">
 
-</ul>
+            <h3>Daily Trends</h3>
 
-<h2>Technologies Used</h2>
+            <p>
+                Tracks daily and monthly COVID-19 trends using line charts,
+                maps, and time-series visualizations to identify growth patterns.
+            </p>
 
-<div class="tech">
+        </div>
 
-<span>Power BI</span>
+    </div>
 
-<span>DAX</span>
+    <div class="card">
 
-<span>Power Query</span>
+        <img src="assets/images/covid_country_analysis.png" alt="Country Analysis">
 
-<span>SQL</span>
+        <div class="card-content">
 
-<span>Star Schema</span>
+            <h3>Country Analysis</h3>
 
-<span>Data Modeling</span>
+            <p>
+                Provides country-wise comparisons through interactive visuals,
+                highlighting the most affected regions and pandemic insights.
+            </p>
 
-<span>Data Visualization</span>
+        </div>
 
-</div>
-
-<h2>Dashboard Preview</h2>
-
-<div class="dashboard">
-
-<!-- Replace with your images -->
-
-<img src="assets/images/covid_exec_summary.png" alt="Executive Summary">
-
-<img src="assets/images/covid_daily_trends.png" alt="Daily Trends">
+    </div>
 
 </div>
-
-<a href="index.html" class="btn">← Back to Portfolio</a>
 
 </div>
 
 </body>
-
 </html>
