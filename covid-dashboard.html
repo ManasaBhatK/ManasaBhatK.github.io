@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVID-19 Analysis Dashboard</title>
+    <title>COVID-19 Analysis Dashboard | Manasa K</title>
 
     <style>
-        body{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
-            background:#f5f7fa;
-            margin:0;
-            padding:40px;
-            color:#333;
         }
 
-        .container{
-            max-width:1100px;
-            margin:auto;
-            background:#fff;
-            padding:40px;
-            border-radius:12px;
-            box-shadow:0 5px 15px rgba(0,0,0,.1);
+        body {
+            background: #f4f6f9;
+            color: #333;
         }
 
-        h1{
-            color:#0078D4;
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.12);
         }
 
-        h2{
-            margin-top:35px;
-            color:#444;
+        h1 {
+            color: #1d3b8b;
+            margin-bottom: 10px;
         }
 
-        p{
-            line-height:1.7;
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
         }
 
-        ul{
-            line-height:2;
+        h2 {
+            color: #1d3b8b;
+            margin-top: 35px;
+            margin-bottom: 15px;
         }
 
-        img{
-            width:100%;
-            border-radius:8px;
-            margin-top:20px;
-            border:1px solid #ddd;
+        p {
+            line-height: 1.8;
         }
 
-        .btn{
-            display:inline-block;
-            margin-top:30px;
-            padding:12px 25px;
-            background:#0078D4;
-            color:white;
-            text-decoration:none;
-            border-radius:6px;
+        ul {
+            margin-left: 20px;
+            line-height: 2;
         }
 
-        .btn:hover{
-            background:#005fa3;
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
         }
+
+        .tech span {
+            background: #1d3b8b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .dashboard {
+            margin-top: 25px;
+        }
+
+        .dashboard img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #1d3b8b;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #0f2d73;
+        }
+
     </style>
+
 </head>
 
 <body>
@@ -69,53 +104,71 @@
 
 <h1>COVID-19 Analysis Dashboard</h1>
 
-<p>
-This Power BI dashboard provides a comprehensive analysis of global COVID-19 trends,
-enabling users to monitor confirmed cases, deaths, recoveries, testing, vaccination
-progress, and country-wise performance through interactive visualizations.
+<p class="subtitle">
+Interactive Power BI dashboard providing executive insights into global COVID-19 trends through KPI monitoring, country-wise analysis, and daily trend visualization.
 </p>
 
 <h2>Project Overview</h2>
 
-<ul>
-<li>Developed using Microsoft Power BI</li>
-<li>Data cleaned and transformed using Power Query</li>
-<li>Created data model using Star Schema</li>
-<li>Built DAX measures for KPIs and trend analysis</li>
-<li>Interactive filters, slicers and drill-through navigation</li>
-</ul>
+<p>
+Designed and developed an interactive Power BI dashboard to analyze global COVID-19 data. The dashboard enables users to monitor pandemic trends, compare country-level performance, and track key health metrics through intuitive visualizations and executive-level reporting.
+</p>
 
-<h2>Dashboard Features</h2>
+<h2>Dashboard Highlights</h2>
 
 <ul>
-<li>Global COVID-19 Summary</li>
-<li>Top 10 Countries by Cases</li>
-<li>Top 10 Countries by Deaths</li>
-<li>Recovery Rate Analysis</li>
-<li>Death Rate Analysis</li>
-<li>Vaccination Progress</li>
-<li>Daily Trend Analysis</li>
-<li>Interactive Map Visualization</li>
+    <li>Executive summary of Confirmed, Recovered, Active, and Death cases.</li>
+
+    <li>Country-wise analysis using Top 5 and Top 10 visualizations.</li>
+
+    <li>Interactive world map displaying active COVID-19 cases.</li>
+
+    <li>Daily and monthly trend analysis for confirmed cases and deaths.</li>
+
+    <li>Recovery Rate and Death Rate KPI monitoring.</li>
+
+    <li>Weekly comparison of confirmed cases with percentage change.</li>
+
+    <li>Interactive slicers, drill-downs, and page navigation for enhanced user experience.</li>
+
 </ul>
 
 <h2>Technologies Used</h2>
 
-<ul>
-<li>Power BI Desktop</li>
-<li>Power Query</li>
-<li>DAX</li>
-<li>SQL</li>
-<li>Star Schema Data Modeling</li>
-</ul>
+<div class="tech">
+
+<span>Power BI</span>
+
+<span>DAX</span>
+
+<span>Power Query</span>
+
+<span>SQL</span>
+
+<span>Star Schema</span>
+
+<span>Data Modeling</span>
+
+<span>Data Visualization</span>
+
+</div>
 
 <h2>Dashboard Preview</h2>
 
-<!-- Replace with your screenshot -->
-<img src="assets/covid-dashboard.png" alt="COVID Dashboard">
+<div class="dashboard">
 
-<a class="btn" href="index.html">← Back to Portfolio</a>
+<!-- Replace with your images -->
+
+<img src="assets/images/covid_exec_summary.png" alt="Executive Summary">
+
+<img src="assets/images/covid_daily_trends.png" alt="Daily Trends">
+
+</div>
+
+<a href="index.html" class="btn">← Back to Portfolio</a>
 
 </div>
 
 </body>
+
 </html>
